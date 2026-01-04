@@ -19,7 +19,7 @@ A modern, responsive personal portfolio website designed to showcase my skills a
 - Google Fonts
 
 ## 🚀 Live Demo
-[View Live Site](https://patel-bhavik2306005.github.io/personal-portfolio-1/)
+[View Live Site](https://patel-bhavik2306005.github.io/Final-portfolio/)
 
 
 ## 📬 Contact

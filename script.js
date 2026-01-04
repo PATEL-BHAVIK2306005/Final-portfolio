@@ -6,7 +6,7 @@ if (mobileMenu) {
     mobileMenu.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
         navMenu.classList.toggle('active');
-        
+
         // Animate Hamburger
         const bars = mobileMenu.querySelectorAll('.bar');
         // Simple class toggle for animation in CSS if we added it, 
@@ -29,17 +29,17 @@ navLinks.forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             // Calculate header offset
             const headerOffset = 80;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        
+
             window.scrollTo({
                 top: offsetPosition,
                 behavior: "smooth"
@@ -54,7 +54,7 @@ const revealElements = document.querySelectorAll('.project-card, .skill-item, .c
 const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
-    
+
     revealElements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         if (elementTop < windowHeight - elementVisible) {
@@ -75,3 +75,45 @@ revealElements.forEach(el => {
 window.addEventListener('scroll', revealOnScroll);
 // Trigger once on load
 revealOnScroll();
+
+// Update Local Time in Footer
+function updateTime() {
+    const timeElement = document.getElementById('time');
+    if (timeElement) {
+        const now = new Date();
+        timeElement.textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    }
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+// BAPS Quotes Rotation
+const bapsQuotes = [
+    "In the joy of others, lies our own.",
+    "Better a diamond with a flaw than a pebble without.",
+    "Ghar Sabha is the master key to happy family life.",
+    "Prayer is the call of the soul to God.",
+    "To serve without expectation is true seva."
+];
+
+let currentQuoteIndex = 0;
+const quoteElement = document.getElementById('quote-display');
+
+function rotateQuote() {
+    if (!quoteElement) return;
+
+    // Fade out
+    quoteElement.style.opacity = '0';
+
+    setTimeout(() => {
+        // Change text
+        currentQuoteIndex = (currentQuoteIndex + 1) % bapsQuotes.length;
+        quoteElement.textContent = `"${bapsQuotes[currentQuoteIndex]}"`;
+
+        // Fade in
+        quoteElement.style.opacity = '1';
+    }, 500); // Wait for fade out to complete
+}
+
+// Rotate every 30 seconds
+setInterval(rotateQuote, 30000);

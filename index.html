@@ -95,7 +95,7 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-img color-1"></div>
+                        <img src="weather_project.png" alt="Weather App Project">
                     </div>
                     <div class="project-info">
                         <h3>Weather App</h3>
@@ -114,7 +114,7 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-img color-2"></div>
+                        <img src="calculator_project.png" alt="Golden Calculator Project">
                     </div>
                     <div class="project-info">
                         <h3>Golden Calculator</h3>
@@ -130,7 +130,7 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-img color-3"></div>
+                        <img src="music_project.png" alt="Music Store Project">
                     </div>
                     <div class="project-info">
                         <h3>Music Store</h3>
@@ -147,71 +147,98 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+
+
+    <!-- Outstanding Footer -->
+    <footer class="outstanding-footer">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <span class="section-subtitle">Get in Touch</span>
-                    <h2 class="section-title">Let's Talk</h2>
-                    <p>Have a project in mind or want to collaborate? Feel free to send me a message.</p>
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>bhavik.uni.portal220@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Kalol, Panchmahal, Gujarat, India - 389330</span>
+            <div class="footer-content">
+                <div class="footer-cta" id="footer-contact">
+                    <h2>Let's Make<br>Something<br><span class="gradient-text">Amazing.</span></h2>
+
+                    <div class="footer-form-wrapper">
+                        <!-- Web3Forms Integration -->
+                        <form action="https://api.web3forms.com/submit" method="POST" class="footer-contact-form">
+                            <input type="hidden" name="access_key" value="2fc66329-f8d8-48d9-ac45-aed21e068807">
+
+                            <div class="footer-form-group">
+                                <input type="text" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="footer-form-group">
+                                <input type="email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="footer-form-group">
+                                <textarea name="message" rows="3" required placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="footer-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>Connect</h3>
+                        <div class="footer-social-icons">
+                            <a href="https://www.linkedin.com/in/bhavikkumar-patel-082314209/" target="_blank"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/PATEL-BHAVIK2306005" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bhavik_patel_220/?hl=en" target="_blank"
+                                aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="mailto:bhavik.uni.portal220@gmail.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/bhavik_patel_220/?hl=en" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/bhavikkumar-patel-082314209/" target="_blank"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/PATEL-BHAVIK2306005" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
+
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                            <li><a href="#projects"><i class="fa-solid fa-briefcase"></i> Work</a></li>
+                            <li><a href="#footer-contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column info-column">
+                        <h3>Location</h3>
+                        <div class="location-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="location-text">
+                                <p>18, Shantinagar Society</p>
+                                <p class="sub-text">Kalol, Panchmahal, Gujarat</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="location-text">
+                                <p class="current-time"><span id="time">--:--</span></p>
+                                <p class="sub-text">Local Time</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="contact-form-container">
-            <!-- Web3Forms Integration -->
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <!-- Access Key Input - User must replace this -->
-                <input type="hidden" name="access_key" value="2fc66329-f8d8-48d9-ac45-aed21e068807">
-
-                <!-- Optional: Custom Redirection -->
-                <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
-
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bhavik Patel.</p>
+                <div class="footer-quotes" id="quote-display">
+                    "In the joy of others, lies our own."
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                        placeholder="Your message here..."></textarea>
-                </div>
-                <button type="submit" class="btn primary submit-btn">Send Message <i
-                        class="fa-solid fa-paper-plane"></i></button>
-            </form>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Bhavik Patel. All rights reserved.</p>
-            <!-- Last Deployment: 2026-01-04 19:15 -->
+                <a href="#home" class="back-to-top">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
         </div>
     </footer>
 

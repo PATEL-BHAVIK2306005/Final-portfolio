@@ -19,15 +19,8 @@ A modern, responsive personal portfolio website designed to showcase my skills a
 - Google Fonts
 
 ## 🚀 Live Demo
-[View Live Site](https://PATEL-BHAVIK2306005.github.io/personal-portfolio-4/)
+[View Live Site](https://patel-bhavik2306005.github.io/personal-portfolio-1/)
 
-## 📝 Usage
-Clone the repository and open `index.html` in your browser.
-```bash
-git clone https://github.com/PATEL-BHAVIK2306005/personal-portfolio-4.git
-cd personal-portfolio-4
-start index.html
-```
 
 ## 📬 Contact
 Feel free to reach out to me for collaborations or freelance work!

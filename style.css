@@ -118,6 +118,11 @@ h3,
     color: var(--accent-color);
 }
 
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;

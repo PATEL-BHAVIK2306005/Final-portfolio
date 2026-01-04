@@ -4,7 +4,8 @@
     --bg-secondary: #16161e;
     --text-primary: #f3f4f6;
     --text-secondary: #9ca3af;
-    --accent-color: #7c3aed; /* Violet accent */
+    --accent-color: #7c3aed;
+    /* Violet accent */
     --accent-hover: #6d28d9;
     --accent-gradient: linear-gradient(135deg, #7c3aed, #db2777);
     --card-bg: rgba(255, 255, 255, 0.03);
@@ -55,7 +56,10 @@ img {
 }
 
 /* Typography & Buttons */
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -87,6 +91,8 @@ h1, h2, h3, .logo {
     cursor: pointer;
     transition: var(--transition);
     font-family: var(--font-heading);
+    position: relative;
+    z-index: 5;
 }
 
 .btn.primary {
@@ -150,7 +156,8 @@ h1, h2, h3, .logo {
     color: var(--text-secondary);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--text-primary);
 }
 
@@ -274,9 +281,22 @@ h1, h2, h3, .logo {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
-    40% {transform: translateY(-10px) translateX(-50%);}
-    60% {transform: translateY(-5px) translateX(-50%);}
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    40% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+
+    60% {
+        transform: translateY(-5px) translateX(-50%);
+    }
 }
 
 /* About Section */
@@ -362,9 +382,17 @@ h1, h2, h3, .logo {
     transform: scale(1.05);
 }
 
-.color-1 { background: linear-gradient(45deg, #3b82f6, #8b5cf6); }
-.color-2 { background: linear-gradient(45deg, #10b981, #3b82f6); }
-.color-3 { background: linear-gradient(45deg, #f59e0b, #ef4444); }
+.color-1 {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+}
+
+.color-2 {
+    background: linear-gradient(45deg, #10b981, #3b82f6);
+}
+
+.color-3 {
+    background: linear-gradient(45deg, #f59e0b, #ef4444);
+}
 
 .project-info {
     padding: 1.5rem;
@@ -385,6 +413,8 @@ h1, h2, h3, .logo {
 .project-links {
     display: flex;
     gap: 1.5rem;
+    position: relative;
+    z-index: 5;
 }
 
 .link-item {
@@ -540,7 +570,7 @@ footer {
     .hero-text h1 {
         font-size: 3rem;
     }
-    
+
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -579,15 +609,15 @@ footer {
     .hero-text p {
         margin: 0 auto 2rem;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .image-wrapper {
         width: 250px;
         height: 250px;

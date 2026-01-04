@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website designed to showcase my skills and projects as a Web Developer & Designer.
 
-![Portfolio Preview](Screenshot 2026-01-04 184148.png)
+![Portfolio Preview](Screenshot_2026-01-04_184148.png)
 
 ## 🌟 Features
 - **Responsive Design**: Fully responsive layout that works on all devices.
